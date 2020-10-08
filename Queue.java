@@ -99,6 +99,19 @@ public class Queue <ELEMENT> {
         --this.count;
         return result;
     }
+    public static Queue<Object> union(Queue<?> queue1,Queue<?> queue2){
+        Queue<Object> result = new Queue<Object>(queue1.size()+ queue2.size());
+        while(!queue1.isEmpty()){
+           result.add(queue1.remove()); 
+        }
+        while(!queue2.isEmpty()){
+           result.add(queue2.remove()); 
+        }
+        return result;    
+    }
+    public Queue<Object> union(Queue<?> queue2){
+       return Queue.union(this,queue2); 
+    }
     @Override
     public String toString() {
  

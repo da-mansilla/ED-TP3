@@ -28,7 +28,7 @@ class ejercicio1{
     public Queue<Integer> getMultiplies(int number){ 
        Queue<Integer> queue = new Queue<Integer>(100);
        for(int i = 1; i<= 100; i++){
-           if(number % i != 0){
+           if(i % number  != 0){
             queue.add(i);
            }
        }
