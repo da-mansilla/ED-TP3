@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Helper{
-    private static Scanner sc = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
    public Helper(){
    }
    public static int generateRandomNumber(int number) {
@@ -22,7 +22,6 @@ public class Helper{
    }
 
 	public static int selectOption(int min, int max) {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {
         	
 	        try { 	
@@ -39,7 +38,6 @@ public class Helper{
 	    }
 	}
 	public static int inputNumber() {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {   	
 	        try { 	
         		int number = scanner.nextInt();
@@ -52,7 +50,6 @@ public class Helper{
 	    }
 	}
 	public static int inputPositiveNumber() {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {   	
 	        try { 	
             int number;
@@ -68,7 +65,6 @@ public class Helper{
 	    }
 	}
 	public static double inputDouble() {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {   	
 	        try { 	
 	        	double number = scanner.nextDouble();
@@ -81,10 +77,9 @@ public class Helper{
 	    }
 	}
 	public static String inputString() {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {   	
 	        try { 	
-        		String string= scanner.nextLine();
+        		String string= scanner.next();
 	        	return string;	
 	        }	  	
 	        catch (Exception e) {
@@ -94,7 +89,6 @@ public class Helper{
 	    }
     }
 	public static char inputChar() {
-		Scanner scanner = new Scanner(System.in);
 	    while (true) {   	
 	        try { 	
         		char character= scanner.next().charAt(0);
